@@ -1,0 +1,9 @@
+---
+- name: Tworzy folder na Windows Serverze
+  hosts: windows
+  gather_facts: no
+  tasks:
+    - name: Tworzenie folderu C:\TestFolder
+      win_file:
+        path: C:\TestFolder
+        state: directory
