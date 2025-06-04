@@ -1,6 +1,6 @@
 ---
 - name: Tworzy folder na Windows Serverze
-  hosts: windows
+  hosts: all
   gather_facts: no
   tasks:
     - name: Tworzenie folderu C:\TestFolder
